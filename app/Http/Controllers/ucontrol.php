@@ -168,7 +168,7 @@ class ucontrol extends Controller
         {
             $request->session()->put('email',$userinfo2->email);
                     $request->session()->put('loggedusersid',$userinfo2->sid);
-                    return redirect('/userhome');
+                    return redirect('/userindex');
         }
         else{
             return back()->with('fail','Invalid Credentials !');
