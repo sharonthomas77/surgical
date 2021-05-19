@@ -157,7 +157,7 @@ required
 </div>
 <div class="row">
 <div class="col-xs-12">
-<center><a class="btn btn-success" href="/myorders"  > Submit  </a> </center>
+<center><a class="btn btn-success" href="/myorders"  > SUBMIT  </a> </center>
 </div>
 </div>
 <div class="row" style="display:none;">
