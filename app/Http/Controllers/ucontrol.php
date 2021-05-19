@@ -155,26 +155,24 @@ class ucontrol extends Controller
         $getemail=$request -> input('email');
         $getpass=$request -> input('password');
         $data = DB::select('select id from uloginmodels where email=? and password=?',[$getemail,$getpass]);
+        
+        $userinfo2 = uloginmodel::where([['email',$request->email],['password',$request->password]])->first();
 
-        if(count($data))
+        if($request->email=='admin@gmail.com' && $request->password=='admin')
         {
-            $dat= $request -> input();
-            $request-> session()->put('email', $dat['email']);
-            return view('userindex');        }
-            else if($getemail=='admin@gmail.com' && $getpass=='admin')
-            {
-                $request-> session()->put('email','admin');
-                return view('aindex');
-            }
-        else
-        {
-
-           // return back()->withInput();
-           return back()->with('fail','Error: Invalid Login');
-
+            $request-> session()->put('email','admin');
+            return redirect('/aindex');
 
         }
-
+        else if($userinfo2)
+        {
+            $request->session()->put('email',$userinfo2->email);
+                    $request->session()->put('loggedusersid',$userinfo2->sid);
+                    return redirect('/userhome');
+        }
+        else{
+            return back()->with('fail','Invalid Credentials !');
+        }
 
     }
 
