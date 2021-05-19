@@ -106,7 +106,6 @@ public function cartlist()
     $products= DB::table('cartmodels')
     ->join('pmodels', 'cartmodels.pid', '=', 'pmodels.pid')
     ->where('cartmodels.email', $userId)
-   // ->select('pmodels.*')
     ->select('pmodels.*','cartmodels.id as cart_id')
     ->get();
      return view('cart', compact('products'));
