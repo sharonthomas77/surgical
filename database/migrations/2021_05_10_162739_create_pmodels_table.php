@@ -17,7 +17,7 @@ class CreatePmodelsTable extends Migration
             $table->id();
             $table->string('pid');
             $table->string('pname');
-            $table->string('price');
+            $table->integer('price');
             $table->string('desc');
             $table->mediumText("pimage")->nullable();
 
