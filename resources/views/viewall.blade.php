@@ -19,32 +19,13 @@
     <div class="container-fluid">
     <img src="/images\a.jpg" height="75" alt="" ><br>
     <br>
+    <div id="hide">
     <a class="navbar-brand" href="/aindex" style="font-size:larger; font-family:sans-serif; font-weight: 600;"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Home</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
  <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <!-- <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/userhome" style="font-size:larger; font-family:sans-serif;font-weight: 600;">&nbspProducts</a>
-      </li> -->
-      <li class="nav-item">
-        <a class="nav-link" href="#" style="font-size:larger; font-family:sans-serif;"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/userview" style="font-size:larger; font-family:sans-serif;font-weight: 600;">&nbsp&nbspEdit</a>
-      </li>
-    </li>
-   <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="/vieworders" style="font-size:larger; font-family:sans-serif;font-weight: 600;">&nbsp&nbsp&nbsp&nbspView Orders</a>
-    </li>
-    <!-- <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="offers.php" style="font-size:larger; font-family:sans-serif;font-weight: 600;">Management</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/contact" style="font-size:larger; font-family:sans-serif;font-weight: 600;">&nbsp&nbsp&nbsp&nbspContact</a>
-      </li>-->
-    </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="/logout">Log Out</a>
@@ -55,9 +36,15 @@
   </div>
 </div>
 </nav>
-
+<div>
 <body>
-
+<style type="text/css">
+@media print {
+    #hide {
+        display :  none;
+    }
+}
+</style>
 
 
 <br>
@@ -88,8 +75,9 @@
     <td>{{$prods->status}}</td>
     <td>{{$prods->created_at}}</td>
 </tr>
-
+<div style="text-align:right"><button id="hide" class="btn btn-outline-primary" onclick="window.print()">Print</button></div>
 @endforeach
+<br><br>
 </table>
 </div>
  <div class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
