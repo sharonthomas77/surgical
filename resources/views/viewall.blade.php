@@ -75,8 +75,9 @@
     <td>{{$prods->status}}</td>
     <td>{{$prods->created_at}}</td>
 </tr>
-<div style="text-align:right"><button id="hide" class="btn btn-outline-primary" onclick="window.print()">Print</button></div>
 @endforeach
+<div style="text-align:right"><button id="hide" class="btn btn-outline-primary" onclick="window.print()">Print</button></div>
+
 <br><br>
 </table>
 </div>

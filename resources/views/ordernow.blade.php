@@ -79,13 +79,13 @@
   <div class="form-group">
     <textarea name="address" class="form-control" placeholder="Enter your address" required></textarea>
   </div>
-  <div class="form-group">
-    <label for="pwd">Payment Method</label><br><br>
-    <input type="radio" value="card" name="payment"><span>Debit/Credit card</span><br><br>
-    <input type="radio" value="cod" name="payment"><span>Cash On delivery</span><br><br>
+  <center><div class="form-group">
+    <h5><label for="pwd">Payment Method</label><br><br></h5>
+    <input type="radio" value="card" name="payment" required><span>Debit/Credit card</span><br><br>
+    <input type="radio" value="cod" name="payment" required><span>Cash On delivery</span><br><br>
   <button type="submit" class="btn btn-primary">Order Now</button>
 </form>
-  </div>
+  </div></center>
  </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
