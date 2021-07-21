@@ -96,7 +96,7 @@
                                 <div class="form-group row">
                                     <label for="password" class="col-md-4 col-form-label text-md-right">New Password</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="password" class="form-control" name="password">
+                                        <input type="password" id="password" class="form-control" name="password">
                                         <span class="text-danger">@error('password'){{$message}} @enderror  </span>
 
                                     </div>
@@ -105,7 +105,7 @@
                                 <div class="form-group row">
                                     <label for="repassword" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="repassword" class="form-control" name="repassword">
+                                        <input type="password" id="repassword" class="form-control" name="repassword">
                                         <span class="text-danger">@error('repassword'){{$message}} @enderror  </span>
 
                                     </div>
