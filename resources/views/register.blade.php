@@ -115,7 +115,7 @@
                                     <label for="nid_number" class="col-md-4 col-form-label text-md-right"><abbr
                                                 title="IMA Id Card">CID</abbr> Number</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="nid_number" class="form-control" name="cid">
+                                        <input type="text" id="nid_number" class="form-control" name="cid" placeholder="Enter 10 digit IMA id">
                                         <span class="text-danger">@error('cid'){{$message}} @enderror  </span>
 
                                     </div>
