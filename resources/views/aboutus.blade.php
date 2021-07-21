@@ -12,7 +12,7 @@
                 <div class="col-md-6">
                     <div class="get-to-know-us-content">
                     <br><br>
-                        <h6>Get To know Us</h6>
+                        <h6>Get know Us</h6>
                         <p>United serves to supply best quality surgical equipments and machineries in India since 1993. Commencing its service, United has become one of the leading surgical suppliers in India with a tremendous portfolio of satisfied clients.</P>
 
                             United has business deals with world's renowned surgical equipment manufacturing companies and became a well established distributor of all kinds of Medical Products, Laboratory Equipments and consumables, Industrial Equipment and Pharmaceuticals to the Government and Private institutions in India.
